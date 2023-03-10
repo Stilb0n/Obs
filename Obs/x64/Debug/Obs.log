@@ -1,0 +1,4 @@
+﻿  State.cpp
+C:\Users\User\source\repos\Obs\Obs\State.cpp(21,21): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\User\source\repos\Obs\Obs\State.cpp(35,22): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+  Obs.vcxproj -> C:\Users\User\source\repos\Obs\x64\Debug\Obs.exe
