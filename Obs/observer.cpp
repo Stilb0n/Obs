@@ -3,8 +3,8 @@
 #include <string>
 #include "State.cpp"
 
-class IObserver {
-public:
+    class IObserver {
+    public:
 	virtual ~IObserver() {};
 	virtual void Update(const std::string& message_from_subject) = 0;
 };

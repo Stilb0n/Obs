@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="IFileEditor.cpp" />
     <ClCompile Include="Obs.cpp" />
     <ClCompile Include="observer.cpp" />
     <ClCompile Include="State.cpp" />

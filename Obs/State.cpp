@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream> 
+#include "IFileEditor.cpp"
 using namespace std; 
+
 
 class FileEditor {
 bool existing = 1;
