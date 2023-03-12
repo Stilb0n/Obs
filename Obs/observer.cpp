@@ -1,7 +1,7 @@
 #include <iostream>
 #include <list>
 #include <string>
-#include "State.cpp"
+#include "FileEditor.cpp"
 
     class IObserver {
     public:
