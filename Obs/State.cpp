@@ -6,7 +6,7 @@ class FileEditor {
 bool existing = 1;
 int size = 0;
 fstream file;
-bool edited;
+bool edited = 0;
   
  public:
 
@@ -36,7 +36,6 @@ bool edited;
 			 cout << size;
 		 }
 	 }
-
 	
 	
 };	
