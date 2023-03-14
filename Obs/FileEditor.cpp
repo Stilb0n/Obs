@@ -4,7 +4,7 @@
 using namespace std; 
 
 
-class FileEditor {
+class FileEditor : public IFileEditor {
 bool existing = 1;
 int size = 0;
 fstream file;
@@ -38,18 +38,42 @@ bool edited = 0;
 			 cout << size;
 		 }
 	 }
-	
-	
+	 void Attach(IObserver* observer) override {
+		 list_observer_.push_back(observer);
+	 }
+	 void Detach(IObserver* observer) override {
+		 list_observer_.remove(observer);
+	 }
+	 void Notify() override {
+		 list<IObserver*>::iterator iterator = list_observer_.begin();
+		 HowManyObserver();
+		 while (iterator != list_observer_.end()) {
+			 (*iterator)->Update(message_);
+			 // зачем разыменовываю?
+			 ++iterator;
+		 } 
+	 }
+
+	 void SomeBusinessLogic() {
+		 this->message_ = "change message message";
+		 Notify();
+		 std::cout << "I'm about to do some thing important\n";
+	 }
+
+private:
+	 std::list<IObserver*> list_observer_;
+	 std::string message_;
 };	
 
-class Subject : public IFileEditor {
+class Subject  : public ISubject {
+	// ^издатель
 public:
 	virtual ~Subject() {
-		std::cout << "Goodbye, I was the Subject.\n";
+		std::cout << "Goodbye, I was the Editor.\n";
 	}
 
 	/**
-	 * ћетоды управлени€ подпиской. издатель
+	 * ћетоды управлени€ подпиской. 
 	 */
 	void Attach(IObserver* observer) override {
 		list_observer_.push_back(observer);
@@ -58,10 +82,11 @@ public:
 		list_observer_.remove(observer);
 	}
 	void Notify() override {
-		std::list<IObserver*>::iterator iterator = list_observer_.begin();
+		list<IObserver*>::iterator iterator = list_observer_.begin();
 		HowManyObserver();
 		while (iterator != list_observer_.end()) {
 			(*iterator)->Update(message_);
+			// зачем разыменовываю?
 			++iterator;
 		}
 	}
@@ -73,6 +98,7 @@ public:
 	void HowManyObserver() {
 		std::cout << "There are " << list_observer_.size() << " observers in the list.\n";
 	}
+
 
 	/**
 	 * ќбычно логика подписки Ц только часть того, что делает »здатель. »здатели
@@ -87,6 +113,6 @@ public:
 	}
 
 private:
-	std::list<IObserver*> list_observer_;
-	std::string message_;
+	0
+	
 };
