@@ -21,9 +21,6 @@
     <ClCompile Include="FileEditor.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="observer.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="IFileEditor.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>

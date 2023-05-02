@@ -1,29 +1,5 @@
-﻿  observer.cpp
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(6,7): error C2143: синтаксическая ошибка: отсутствие ";" перед "<class-head>"
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(6,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(14,14): error C2061: синтаксическая ошибка: идентификатор "FileEditor"
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(37,12): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(37,12): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(37,22): error C2238: непредвиденные лексемы перед ";"
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(14,46): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(14,37): error C2614: Observer: недопустимая инициализация члена: "subject_" не является базовым классом или членом
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(15,15): error C2039: "subject_": не является членом "Observer".
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(12): message : см. объявление "Observer"
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(28,9): error C2065: subject_: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(45,5): error C2065: Subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(45,14): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(45,28): error C2061: синтаксическая ошибка: идентификатор "Subject"
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(46,41): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(47,41): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(48,41): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(52,5): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(55,5): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(56,31): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(59,31): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(61,5): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(72,12): error C2065: subject: необъявленный идентификатор
-C:\Users\User\Desktop\Obs\Obs\observer.cpp(72,19): error C2541: delete: нельзя удалять объекты, не являющиеся указателями
-  State.cpp
-C:\Users\User\Desktop\Obs\Obs\State.cpp(21,21): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
-C:\Users\User\Desktop\Obs\Obs\State.cpp(35,22): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
-  Создание кода...
+﻿  Obs.cpp
+C:\Users\User\source\repos\Obs\Obs\Obs.cpp(1,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\User\source\repos\Obs\Obs\FileEditor.cpp(22,21): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+C:\Users\User\source\repos\Obs\Obs\FileEditor.cpp(36,22): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+  Obs.vcxproj -> C:\Users\User\source\repos\Obs\x64\Debug\Obs.exe
